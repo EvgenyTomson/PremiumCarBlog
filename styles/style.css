@@ -26,12 +26,9 @@ body {
 .button {
   display: inline-block;
   box-sizing: border-box;
-  /* padding-top: 15px; */
-  /* vertical-align: middle; */
   width: 270px;
   height: 50px;
   margin: 0;
-  /* margin: 21px 0 0 0; */
   text-align: center;
   align-items: center;
   color: #fff;
@@ -44,8 +41,13 @@ body {
   font-size: 14px;
   /* line-height: 18px; */
   line-height: 50px;
+
+  transition: .3s linear;
 }
 
+.button:hover {
+  opacity: .7;
+}
 
 .logo {
   display: flex;
@@ -79,7 +81,7 @@ body {
   box-sizing: border-box;
   width: 270px;
   height: 50px;
-  padding: 0;
+  padding: 0 0 0 15px;
   outline: 0;
   border: 0;
 }
@@ -90,7 +92,6 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #AEB3BB;
-  padding-left: 15px;
 }
 
 .form__button {
@@ -101,9 +102,11 @@ body {
   padding: 0;
 }
 
+
+
 /* Header */
 .header {
-  background-color: #000000;
+  background-color: #000;
 }
 
 .header__container {
@@ -143,6 +146,27 @@ body {
 
 .menu__link:hover {
   opacity: .6;
+}
+
+
+.search__input {
+  visibility: hidden;
+}
+
+.search__input_active {
+  visibility: visible;
+}
+
+.search__button {
+  position: relative;
+  top: 3px;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.search__img {
+  object-fit: contain;
 }
 
 /* Banner */
@@ -524,11 +548,16 @@ body {
   border: 1px solid #E5E5E5;
   border-radius: 3px;
   cursor: pointer;
+  transition: .2s linear;
 }
 
 .posts__button_active {
   color: #fff;
   background-color: #000;
+}
+
+.posts__button:hover {
+  transform: scale(1.15);
 }
 
 

@@ -35,9 +35,15 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="header__search">
-        <img src="./img/search.svg" alt="Search button" class="header__search-img">
-      </a>
+      <form action="" class="search">
+        <input type="text" name="text" class="search__input" id="searchInput">
+        <!-- <a href="#" class="header__search">
+          <img src="./img/search.svg" alt="Search button" class="header__search-img">
+        </a> -->
+        <button class="search__button" id="searchBtn">
+          <img src="./img/search.svg" alt="Search button" class="search__img">
+        </button>
+      </form>
     </div>
   </header>
 
@@ -235,16 +241,16 @@
       </div>
 
       <div class="posts__buttons-wrapper">
-        <button class="posts__button">&lsaquo;</button>
+        <button class="posts__button" id="prev">&lsaquo;</button>
         <button class="posts__button posts__button_active">1</button>
         <button class="posts__button">2</button>
         <button class="posts__button">3</button>
         <button class="posts__button">...</button>
         <button class="posts__button">8</button>
-        <button class="posts__button">&rsaquo;</button>
+        <button class="posts__button" id="next">&rsaquo;</button>
       </div>
     </section>
-
+    <!-- Popular -->
     <section class="popular container">
       <h3 class="popular__title">Most popular</h3>
 
@@ -275,7 +281,7 @@
         </li>
       </ul>
     </section>
-
+    <!-- Subscribe -->
     <section class="subscribe">
       <div class="subscribe__container container">
         <div class="subscribe__column subscribe__column_type_social">
@@ -354,7 +360,7 @@
     </section>
 
   </main>
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container footer__container">
 
@@ -382,5 +388,7 @@
 
     </div>
   </footer>
+
+  <script src="./app.js"></script>
 </body>
 </html>
